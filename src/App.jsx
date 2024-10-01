@@ -1,12 +1,24 @@
 import React from 'react'
 import './App.css'
 import './index.css'
+import { Routes, Route } from "react-router-dom";
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import Contact from './components/contact/Contact';
+import Phone from './components/auth/Phone';
+import Login from './components/auth/Login';
 
 const App = () => {
   return (
-    <div className="flex items-center w-full h-screen bg-[black] justify-center">
-      <div className="text-[100px] font-bold text-[aqua]">Tailwind CSS Template</div>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/footer" element={<Footer />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/phone" element={<Phone />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </>
   )
 }
 

@@ -1,0 +1,141 @@
+main{
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 12px;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+.contact-info div {
+    width: 25%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Adds margin between icons on mobile */
+}
+
+.contact-info div i {
+    display: block;
+    margin-bottom: 5px;
+    color: blue !important; /* Explicitly setting icon color to blue */
+    font-size: 24px; /* Making the icons a bit larger */
+}
+
+@media (max-width: 768px) {
+    .contact-info div {
+        width: 45%; /* Ensures two icons per row in mobile view */
+    }
+
+    .form {
+        width: 100%; /* Make form full width in mobile view */
+        margin: 0; /* Remove margin to ensure alignment */
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input::placeholder, 
+textarea::placeholder {
+    font-weight: bold; /* Bold placeholder text */
+    color: rgba(0, 0, 0, 0.6); /* Optional: a darker placeholder color */
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold; /* Makes the label text bold */
+}
+
+.submit-btn {
+    background-color: #0056ff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit-btn:hover {
+    background-color: #0044cc;
+}
+
+.form {
+    margin-top: 3%;
+    margin-left: 16%;
+    width: 68%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input,
+.form-group textarea {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.checkbox-group input {
+    margin-left: 10px;
+    text-align: center !important;
+    margin-bottom: 2px;
+}
+
+.submit-btn {
+    background-color: #0056ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.submit-btn:hover {
+    background-color: #0044cc;
+}
