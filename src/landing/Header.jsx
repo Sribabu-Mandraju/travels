@@ -44,7 +44,7 @@ const Header = () => {
         <div className="md:hidden">
           <button onClick={toggleSidebar}>
             <svg
-              className="w-6 h-6 text-white"
+              className="w-6 h-6 text-[aqua]"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -63,9 +63,9 @@ const Header = () => {
 
       {/* Sidebar (only visible on mobile) */}
       {isSidebarOpen && (
-        <div className="fixed inset-0 bg-blue-800 bg-opacity-95 z-50">
+        <div className="fixed inset-0 bg-black bg-opacity-95 z-50">
           <div className="absolute top-0 right-0 p-4">
-            <button onClick={toggleSidebar} className="text-white text-3xl">
+            <button onClick={toggleSidebar} className="text-red-600 text-4xl">
               &times;
             </button>
           </div>
