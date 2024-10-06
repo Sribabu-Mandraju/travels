@@ -10,3 +10,24 @@
 body{
     background-color: black;
 }
+
+
+
+.glow-btn{
+    background-color: cyan;
+    /* padding: 10px; */
+    /* font-size: 24px; */
+    border: none;
+    border-radius: 5px;
+    /* margin: 20px; */
+    /* font-family: 'consolas'; */
+    box-shadow: 0px 0px 1px cyan,0px 0px 15px cyan;
+    animation: glow 1s infinite ease;
+  }
+  /* hover effect*/
+  .glow-btn:hover{
+    box-shadow: 0px 0px 5px cyan,0px 0px 25px cyan,0px 0px 50px cyan,0px 0px 100px cyan; 
+  }
+  
+  
+  /*animation effect*/
