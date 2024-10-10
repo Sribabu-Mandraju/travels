@@ -11,6 +11,7 @@ import Header from './landing/Header';
 import Button from './components/share/Button';
 import Hero from './landing/Hero';
 import MainPage from './landing/MainPage';
+import SignUp from './components/auth/SignUp';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/header" element={<Header />} />
           <Route path="/hero" element={<Hero />} />
+          <Route path="/signUp" element={<SignUp />} />
         </Routes>
     </>
   )

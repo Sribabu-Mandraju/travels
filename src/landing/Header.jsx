@@ -61,7 +61,7 @@ const Header = () => {
         {/* Login Button (hidden on mobile) */}
         <div className="hidden md:flex items-center gap-2">
           <button className="mx-2 rounded-md bg-[aqua] text-black px-3 py-1 font-bold flex items-center">
-            <Button text="Login / Register" onClick={() => navigate('/login')} />
+            <Button text="Login / Register" onClick={() => navigate('/signUp')} />
           </button>
         </div>
 
