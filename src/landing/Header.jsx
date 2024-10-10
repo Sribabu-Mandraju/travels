@@ -1,17 +1,42 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from '../components/share/Button';
 import { useNavigate } from 'react-router-dom';
+
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const navigate = useNavigate()
+  const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      // If the user scrolls more than 50px, apply glassmorphism
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <>
-      <div className="w-full flex items-center justify-between h-[60px] shadow-md px-4 ">
+      <div
+        className={`w-full flex items-center z-[4] justify-between fixed top-0 h-[60px] px-4 shadow-md transition-all duration-300 ${
+          isScrolled
+            ? 'bg-opacity-30 backdrop-blur-lg bg-blue-600   border-opacity-10' // glassmorphism effect
+            : 'bg-transparent'
+        }`}
+      >
         {/* Logo */}
         <div className="flex items-center gap-2">
           <div className="font-bold text-white text-2xl">LOGO</div>
@@ -36,7 +61,7 @@ const Header = () => {
         {/* Login Button (hidden on mobile) */}
         <div className="hidden md:flex items-center gap-2">
           <button className="mx-2 rounded-md bg-[aqua] text-black px-3 py-1 font-bold flex items-center">
-            <Button text="Login / Register" onClick={() => navigate("/login")} />
+            <Button text="Login / Register" onClick={() => navigate('/login')} />
           </button>
         </div>
 

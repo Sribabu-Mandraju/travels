@@ -9,17 +9,21 @@ import Phone from './components/auth/Phone';
 import Login from './components/auth/Login';
 import Header from './landing/Header';
 import Button from './components/share/Button';
+import Hero from './landing/Hero';
+import MainPage from './landing/MainPage';
+
 const App = () => {
   return (
     <>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<MainPage />} />
           <Route path="/footer" element={<Footer />} />
           <Route path="/button" element={<Button />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/phone" element={<Phone />} />
           <Route path="/login" element={<Login />} />
           <Route path="/header" element={<Header />} />
+          <Route path="/hero" element={<Hero />} />
         </Routes>
     </>
   )
