@@ -1,6 +1,6 @@
-main{
-    background-color: white;
-    color: black;
+main {
+    background-color: black; /* Change background to black */
+    color: aqua; /* Change text color to aqua */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -13,9 +13,10 @@ main{
 .container {
     width: 100%;
     max-width: 1200px;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.8); /* Add a slight transparency for glassmorphism effect */
     padding: 20px;
     border-radius: 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
 }
 
 .contact-info {
@@ -37,7 +38,7 @@ main{
 .contact-info div i {
     display: block;
     margin-bottom: 5px;
-    color: blue !important; /* Explicitly setting icon color to blue */
+    color: aqua !important; /* Change icon color to aqua */
     font-size: 24px; /* Making the icons a bit larger */
 }
 
@@ -57,13 +58,14 @@ form {
     flex-direction: column;
 }
 
-input, textarea {
-    background-color: white;
-    border: 1px solid black;
+input,
+textarea {
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background for inputs */
+    border: 1px solid aqua; /* Aqua border for inputs */
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 4px;
-    color: black;
+    color: aqua; /* Change input text color to aqua */
     font-size: 14px;
     font-weight: bold;
 }
@@ -71,7 +73,7 @@ input, textarea {
 input::placeholder, 
 textarea::placeholder {
     font-weight: bold; /* Bold placeholder text */
-    color: rgba(0, 0, 0, 0.6); /* Optional: a darker placeholder color */
+    color: rgba(255, 255, 255, 0.6); /* Lighter placeholder color */
 }
 
 input[type="checkbox"] {
@@ -82,11 +84,12 @@ input[type="checkbox"] {
 label {
     font-size: 14px;
     font-weight: bold; /* Makes the label text bold */
+    color: aqua; /* Change label color to aqua */
 }
 
 .submit-btn {
-    background-color: #0056ff;
-    color: white;
+    background-color: aqua; /* Aqua background for submit button */
+    color: black; /* Change text color for button */
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -94,7 +97,7 @@ label {
 }
 
 .submit-btn:hover {
-    background-color: #0044cc;
+    background-color: rgba(0, 255, 255, 0.8); /* Slightly lighter aqua on hover */
 }
 
 .form {
@@ -128,8 +131,8 @@ label {
 }
 
 .submit-btn {
-    background-color: #0056ff;
-    color: white;
+    background-color: aqua; /* Aqua background for submit button */
+    color: black; /* Change text color for button */
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -137,5 +140,5 @@ label {
 }
 
 .submit-btn:hover {
-    background-color: #0044cc;
+    background-color: rgba(0, 255, 255, 0.8); /* Slightly lighter aqua on hover */
 }

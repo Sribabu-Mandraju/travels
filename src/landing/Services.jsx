@@ -12,7 +12,7 @@ const Services = () => {
       <div className="grid grid-cols-5 lg:grid-cols-5 sm:grid-cols-1 text-white p-5 gap-2">
 
         {/* Image Section */}
-        <div className="col-span-5 lg:col-span-2 pt-5">
+        <div className="col-span-5 lg:col-span-2 ">
           <img
             src="https://img.freepik.com/free-psd/travel-sales-background_23-2150350125.jpg"
             alt="Travel Promotion"
