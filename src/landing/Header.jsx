@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <>
       <div
-        className={`w-full flex items-center z-[4] justify-between fixed top-0 h-[60px] px-4 shadow-md transition-all duration-300 ${
+        className={`w-full flex items-center z-[4] justify-between fixed left-0 top-0 h-[60px] px-4 shadow-md transition-all duration-300 ${
           isScrolled
             ? 'bg-opacity-30 backdrop-blur-lg bg-cyan-800   border-opacity-10' // glassmorphism effect
             : 'bg-transparent'

@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 import './index.css'
 import { Routes, Route } from "react-router-dom";
-import Footer from './components/Footer';
+import Footer from './landing/Footer';
 import Home from './pages/Home';
 import Contact from './components/contact/Contact';
 import Phone from './components/auth/Phone';
