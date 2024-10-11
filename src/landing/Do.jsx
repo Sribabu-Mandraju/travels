@@ -6,14 +6,14 @@ import travelImage from '../assets/hello.jpg'; // Assuming the image is in the s
 const Do = () => {
   return (
     <div className="do">
-        <div className="containe bg-black">
+        <div className="w-full bg-black">
         <header>
             <h1>SPECIAL TRAVEL PACKAGES</h1>
-            <h3 className="subtitle">
+            <div className=" text-2xl md:text-4xl text-[aqua]">
             Enjoy exclusive personalized service
             <br />
             and an unforgettable experience
-            </h3>
+            </div>
             <p className="description">
             We understand that every journey has unique needs. Therefore, we offer
             <br />
@@ -26,7 +26,7 @@ const Do = () => {
             <div className="package-card">
                 <div className="content">
                 <h2>Romantic Travel Packages in Bali</h2>
-                <p>Experience an unforgettable romance on the exotic island of Bali.</p>
+                <p className='text-left'>Experience an unforgettable romance on the exotic island of Bali.</p>
                 <ul>
                     <li>7 Days 6 Nights</li>
                     <li className="reviews">4.7 (47 reviews)</li>
@@ -37,7 +37,7 @@ const Do = () => {
 
             <div className="package-card">
                 <h2>Nature Adventure Packages in Patagonia</h2>
-                <p>Enjoy thrilling outdoor adventures in the natural beauty of Patagonia.</p>
+                <p className='text-left'>Enjoy thrilling outdoor adventures in the natural beauty of Patagonia.</p>
                 <ul>
                 <li>10 Days 9 Nights</li>
                 <li className="reviews">4.7 (47 reviews)</li>
@@ -47,7 +47,7 @@ const Do = () => {
 
             <div className="package-card">
                 <h2>Family Vacation Packages in Orlando</h2>
-                <p>Give your family a fun-filled vacation in Orlando, Florida.</p>
+                <p className='text-left'>Give your family a fun-filled vacation in Orlando, Florida.</p>
                 <ul>
                 <li>5 Days 4 Nights</li>
                 <li className="reviews">4.7 (47 reviews)</li>

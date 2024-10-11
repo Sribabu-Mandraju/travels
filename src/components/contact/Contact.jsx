@@ -5,7 +5,8 @@ import './contact.css'; // Import your CSS file
 const Contact = () => {
   return (
     <main>
-      <div className="container">
+      <div className="mt-5">
+        <div className="text-center text-3xl md:text-4xl heading py-2">Get In Touch</div>
         <div className="contact-info">
           <div className="flex flex-col items-center gap-2">
             <FaGlobe />
