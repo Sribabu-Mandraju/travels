@@ -1,0 +1,19 @@
+.earth{
+    box-shadow: inset 0 0 20px rgba(0,0,0,1) , 0 0 40px aqua,inset 0 0 20px aqua;
+    animation: animateEarth 150s linear infinite;
+    background: url('../assets/hero2.jpeg');
+    /* background-size: 100%; */
+    background-size: cover;
+    background-repeat: repeat-x;
+    
+    background-position: bottom center;
+    
+  }
+  @keyframes animateEarth{
+    0%{
+      background-position: 0 0;
+    }
+    100%{
+      background-position: -20000px 0;
+    }
+  }

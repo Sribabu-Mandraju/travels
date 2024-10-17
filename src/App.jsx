@@ -12,6 +12,10 @@ import Button from './components/share/Button';
 import Hero from './landing/Hero';
 import MainPage from './landing/MainPage';
 import SignUp from './components/auth/SignUp';
+import Bento from './landing/Bento';
+import BoxesCore from './components/ui/Test';
+import { BackgroundBeamsWithCollision } from './components/ui/Test2';
+import Earth from './components/ui/Earth';
 
 const App = () => {
   return (
@@ -26,6 +30,10 @@ const App = () => {
           <Route path="/header" element={<Header />} />
           <Route path="/hero" element={<Hero />} />
           <Route path="/signUp" element={<SignUp />} />
+          <Route path="/bento" element={<Bento />} />
+          <Route path="/box" element={<BoxesCore />} />
+          <Route path="/earth" element={<Earth />} />
+          <Route path="/box2" element={<BackgroundBeamsWithCollision />} />
         </Routes>
     </>
   )
