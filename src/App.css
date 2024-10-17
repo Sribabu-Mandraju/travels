@@ -26,7 +26,9 @@ body{
   }
   /* hover effect*/
   .glow-btn:hover{
-    box-shadow: 0px 0px 5px cyan,0px 0px 25px cyan,0px 0px 50px cyan,0px 0px 100px cyan; 
+    /* box-shadow: 0px 0px 5px cyan,0px 0px 25px cyan,0px 0px 50px cyan,0px 0px 100px cyan;  */
+    box-shadow: 0px 0px 5px cyan,0px 0px 25px cyan,0px 0px 50px cyan,0px 0px 100px cyan 
+
   }
 
   .hero {
@@ -53,7 +55,7 @@ body{
     z-index: 2; /* Make sure content is above the background overlay */
   }
   .tex{
-    font-size: 4rem;
+    font-size: 4.5rem;
     text-align: center;
     /* height:90vh; */
     /* line-height: 90vh; */
@@ -61,16 +63,25 @@ body{
     /* background: #d52e3f; */
      font-family: 'Niconne', cursive;
     font-weight: 700;
-    text-shadow: 5px 5px 0px black,   /* Light Aqua */
-                  10px 10px 0px #00d1d1, /* Aqua */
-                  15px 15px 0px #00b3b3, /* Deeper Aqua */
-                  20px 20px 0px #009696, /* Teal */
-                  25px 25px 0px #006f6f, /* Dark Teal */
-                  0px 0px 0px #00ffff,   /* Light Aqua */
-                  0px 0px 0px #00d1d1,   /* Aqua */
-                  0px 0px 0px #00b3b3,   /* Deeper Aqua */
-                  0px 0px 0px #009696;   /* Teal */
-}
+    /* text-shadow: 5px 5px 0px black,   
+                  10px 10px 0px #00d1d1, 
+                  15px 15px 0px #00b3b3, 
+                  20px 20px 0px #009696, 
+                  25px 25px 0px #006f6f, 
+                  0px 0px 0px #00ffff,   
+                  0px 0px 0px #00d1d1,   
+                  0px 0px 0px #00b3b3,   
+                  0px 0px 0px #009696;    */
+                  text-shadow: 5px 5px 0px black
+                  }
+                  /* 15px 15px 0px #00b3b3, 
+                  20px 20px 0px #009696, 
+                  25px 25px 0px #006f6f, 
+                  0px 0px 0px #00ffff,   
+                  0px 0px 0px #00d1d1,   
+                  0px 0px 0px #00b3b3,   
+                  0px 0px 0px #009696;   
+} */
 
 p{
   text-align: center;
