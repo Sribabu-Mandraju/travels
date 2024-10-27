@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import bomb from '../assets/boom.png';
-import diamond from '../assets/diamond.png';
+import diamond from '../assets/diamond2.png';
 
 const Grid = () => {
   const [grid, setGrid] = useState(createGrid());
@@ -43,24 +43,28 @@ const Grid = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white w-full">
       <h1 className="text-2xl md:text-3xl font-bold mb-6">Diamond Collector Game</h1>
-      <p className="text-lg md:text-xl mb-4">Money: ${money}</p>
+      {/* <p className="text-lg md:text-xl mb-4">Money: ${money}</p> */}
 
-      <div className="grid grid-cols-5 gap-2 sm:gap-4">
+      <div className="grid grid-cols-5 gap-1 sm:gap-2">
         {grid.map((box, index) => (
           <motion.div
             key={index}
-            className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-gray-700 rounded-lg flex items-center justify-center cursor-pointer shadow-lg hover:shadow-2xl transition-shadow duration-300"
-            whileHover={{ scale: 1.1 }}
+            className={`w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 ${box.revealed ?"bg-gray-950":"bg-gray-700"}  ${box.revealed?"":"hover:bg-gray-600 "}  duration-150 rounded-lg flex items-center justify-center cursor-pointer shadow-lg hover:shadow-2xl transition-shadow `}
+            whileHover={{ y: box.revealed?"":"-5px"}}
             whileTap={{ scale: 0.9 }}
             style={{
-                boxShadow: "0 5px 1px #2d2b27"
+                // boxShadow: box.revealed?"":"0 5px 1px #2d2b27"
             }}
             onClick={() => handleBoxClick(index)}
           >
             {box.revealed && (
               <span className="text-base sm:text-lg md:text-xl">
                 {box.type === 'diamond' ? (
-                  <img src={diamond} alt="Diamond" className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
+                  <motion.img src={diamond} alt="Diamond" className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" 
+                  
+                  initial={{ opacity: 1, scale: 0 }}
+                   animate={{ opacity: 1, scale: 1 }}
+                   />
                 ) : box.type === 'bomb' ? (
                   <img src={bomb} alt="Bomb" className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
                 ) : ''}
@@ -82,7 +86,7 @@ const Grid = () => {
             <h2 className="text-xl md:text-2xl font-bold text-white mb-4">Oops! Game Over..</h2>
             <button
               onClick={resetGame}
-              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 text-sm sm:text-base md:text-lg"
+              className="bg-green-400 text-black font-bold px-4 py-2 rounded hover:bg-green-700 text-sm sm:text-base md:text-lg"
             >
               Play Again
             </button>
