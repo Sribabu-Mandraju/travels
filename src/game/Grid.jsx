@@ -45,7 +45,7 @@ const Grid = () => {
       <h1 className="text-2xl md:text-3xl font-bold mb-6">Diamond Collector Game</h1>
       {/* <p className="text-lg md:text-xl mb-4">Money: ${money}</p> */}
 
-      <div className="grid grid-cols-5 gap-1 sm:gap-2">
+      <div className="grid grid-cols-5 gap-2 sm:gap-2">
         {grid.map((box, index) => (
           <motion.div
             key={index}
@@ -53,7 +53,7 @@ const Grid = () => {
             whileHover={{ y: box.revealed?"":"-5px"}}
             whileTap={{ scale: 0.9 }}
             style={{
-                // boxShadow: box.revealed?"":"0 5px 1px #2d2b27"
+                boxShadow: box.revealed?"":"0 5px 1px #2d2b27"
             }}
             onClick={() => handleBoxClick(index)}
           >
