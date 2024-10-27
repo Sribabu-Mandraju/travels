@@ -16,12 +16,14 @@ import Bento from './landing/Bento';
 import BoxesCore from './components/ui/Test';
 import { BackgroundBeamsWithCollision } from './components/ui/Test2';
 import Earth from './components/ui/Earth';
-
+import Stars from './components/ui/Stars';
+import Grid from './game/Grid';
 const App = () => {
   return (
     <>
         <Routes>
-          <Route path="/" element={<MainPage />} />
+        <Route path="/" element={<Grid />} />
+          {/* <Route path="/" element={<MainPage />} /> */}
           <Route path="/footer" element={<Footer />} />
           <Route path="/button" element={<Button />} />
           <Route path="/contact" element={<Contact />} />
@@ -33,6 +35,7 @@ const App = () => {
           <Route path="/bento" element={<Bento />} />
           <Route path="/box" element={<BoxesCore />} />
           <Route path="/earth" element={<Earth />} />
+          <Route path="/stars" element={<Stars />} />
           <Route path="/box2" element={<BackgroundBeamsWithCollision />} />
         </Routes>
     </>

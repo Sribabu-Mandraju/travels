@@ -2,7 +2,7 @@ import React from 'react';
 
 const Services = () => {
   return (
-    <div style={{ backgroundColor: 'black' }}>
+    <div className='mt-[100vh]' style={{ backgroundColor: 'black' }}>
       <div className="text-center text-white p-5">
         <p className="text-[aqua] font-bold text-3xl text-center">Service</p>
         <p className="text-2xl font-medium">One-Stop-Shop For Travel Services</p>
