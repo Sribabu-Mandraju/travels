@@ -18,11 +18,15 @@ import { BackgroundBeamsWithCollision } from './components/ui/Test2';
 import Earth from './components/ui/Earth';
 import Stars from './components/ui/Stars';
 import Grid from './game/Grid';
+import CrashGame from './game/Crash2';
+import Crash from './game/Crash';
+
 const App = () => {
   return (
     <>
         <Routes>
-        <Route path="/" element={<Grid />} />
+        <Route path="/" element={<Crash />} />
+        <Route path="/grid" element={<Grid />} />
           {/* <Route path="/" element={<MainPage />} /> */}
           <Route path="/footer" element={<Footer />} />
           <Route path="/button" element={<Button />} />

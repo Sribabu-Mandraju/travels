@@ -45,7 +45,7 @@ const Grid = () => {
       <h1 className="text-2xl md:text-3xl font-bold mb-6">Diamond Collector Game</h1>
       {/* <p className="text-lg md:text-xl mb-4">Money: ${money}</p> */}
 
-      <div className="grid grid-cols-5 gap-2 sm:gap-2">
+      <div className="grid grid-cols-5 gap-1 sm:gap-2">
         {grid.map((box, index) => (
           <motion.div
             key={index}
